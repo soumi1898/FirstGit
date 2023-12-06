@@ -18,3 +18,20 @@ for(var i=0;i<items.length;i++)
 
 var list=document.getElementsByTagName('li');
 list[1].style.fontWeight='bold';
+list[1].style.backgroundColor='yellow';
+list[2].style.visibility='hidden';
+
+//QUERYSELECTOR
+
+var titles=document.querySelectorAll('.list-group-item');
+
+titles[1].style.color='green';
+
+var odd=document.querySelectorAll('li:nth-child(odd)');
+
+for(var i=0;i<odd.length;i++)
+{
+    odd[i].style.backgroundColor='green';
+}
+
+
