@@ -32,24 +32,26 @@
     <header id="main-header">
         <div class="container">
             <h1 id="header-title">Item Lister</h1>
+            <div class="col-md-6 align-self-center">
+                <input type="text" class="form-control" id="filter" placeholder="Search items..">
+            </div>
         </div>
     </header>
 
     <div class="container">
         <div id="main">
             <h2>Add Items</h2>
-            <form>
-                <input type="text">
+            <form id="addForm" class="form-inline mb-3">
+                <input type="text" class="for-control mr-2" id="item">
                 <input type="submit">
             </form>
             <h2 class="title">Items</h2>
             <ul id="items" class="list-group">
-                <li class="list-group-item">Item 1</li>
-                <li class="list-group-item">Item 2</li>
-                <li class="list-group-item">Item 3</li>
-                <li class="list-group-item">Item 4</li>
-                <li class="list-group-item">Item 5</li>
-                <li >Item 6</li>
+                <li class="list-group-item">Item 1<button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                <li class="list-group-item">Item 2<button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                <li class="list-group-item">Item 3<button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                <li class="list-group-item">Item 4<button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                <li class="list-group-item">Item 5<button class="btn btn-danger btn-sm float-right delete">X</button></li>
 
 
             </ul>
@@ -57,7 +59,7 @@
         </div>
     </div>
     
-    <script src="dom.js">
+    <script src="main.js">
         function printInput()
         {
             console.log((Document.getElementById('input')).value);
